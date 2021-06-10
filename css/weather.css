@@ -1,0 +1,11 @@
+table th {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: orange;
+}
+#meteoblueUrl {
+    text-decoration: none;
+    font-size: small;
+    color: blue;
+}

@@ -1,0 +1,30 @@
+Name	                        Unit	Description
+------------------------------------------------------------------------
+symbol_code	                    string	see WeatherIcon service
+air_pressure_at_sea_level	    hPa	    air pressure at sea level
+air_temperature	                celsius	air temperature at 2m above the ground
+air_temperature_max	            celsius	maximum air temperature over period
+air_temperature_min	            celsius	minimum air temperature over period
+air_temperature_percentile_10	celcius	10th percentile of air temperature (i.e 90% chance it will be above this value)
+air_temperature_percentile_90	celcius	90th percentile of air temperature (i.e 10% chance it will be above this value)
+cloud_area_fraction	            %	    total cloud cover for all heights
+cloud_area_fraction_high	    %	    cloud cover higher than 5000m above the ground
+cloud_area_fraction_low	        %	    cloud cover lower than 2000m above the ground
+cloud_area_fraction_medium	    %	    cloud cover between 2000 and 5000m above the ground
+dew_point_temperature	        celsius	dew point temperature 2m above the ground
+fog_area_fraction	            %	    amount of surrounding area covered in fog (horizontal view under a 1000 meters)
+precipitation_amount	        mm	    expected precipitation amount for period
+precipitation_amount_max	    mm	    maximum likely precipitation for period
+precipitation_amount_min	    mm	    minimum likely precipitation for period
+probability_of_precipitation	%	    chance of precipitation during period
+relative_humidity	            %	    relative humidity at 2m above the ground
+ultraviolet_index_clear_sky	    1	    ultraviolet index for cloud free conditions, 0 (low) to 11+ (extreme)
+wind_from_direction	            degrees	direction the wind is coming from (0° is north, 90° east, etc.)
+wind_speed	                    m/s	    wind speed at 10m above the ground (10 min average)
+wind_speed_percentile_10	    m/s	    10th percentile of wind speed at 10m above the ground (10 min average)
+wind_speed_percentile_90	    m/s	    90th percentile of wind speed at 10m above the ground (10 min average)
+wind_speed_of_gust	            m/s	    maximum gust for period at 10m above the ground. Gust is wind speed averaged over 3s.
+
+Source:
+https://api.met.no/doc/locationforecast/datamodel
+

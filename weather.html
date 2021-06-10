@@ -1,0 +1,54 @@
+<!-- 
+Copyright (C) 2021 BITJUNGLE Rune Mathisen
+SPDX-License-Identifier: Apache-2.0
+-->
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="BITJUNGLE Rune Mathisen">
+    <title>Astroværet i Grenland</title>
+    <script src="js/common.js" defer></script>
+    <script src="js/weather.js" defer></script>
+    <script src="js/weatherTable.js" defer></script>
+    <script src="js/weatherButtonBar.js" defer></script>
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body class="w3-light-gray">
+    <header>
+      <div class="w3-container">
+        <a href="index.html"><img src="img/telescope-50x50.png"></a>
+        <span id="pageTitle">Astrovær</span> - Velg observasjonssted: 
+        <span id="places"></span>
+      </div>
+    </header>
+    <main class="w3-container">
+        <div id="weatherForecast" class="w3-container"></div>
+        <div id="helpModal" class="w3-modal">
+            <div class="w3-modal-content">
+              <div class="w3-container">
+                <span onclick="document.getElementById('helpModal').style.display='none'" 
+                class="w3-button w3-display-topright w3-red">&times;</span>
+                <p><br>
+                    Som regel er rødt best, men i denne appen er det blått som gjelder. 
+                    Jo mer blått på en rad, jo bedre. Blått er blå himmel, hvitt er 
+                    hvite skyer. Himmelen vises som en gradient fra blått til hvitt. 
+                    0 % er helt skyfritt, 100 % er helt tett skydekke. Skydekket vises for tre ulike høyder.
+                </p>
+                <p>Datakilde for denne appen er <a href="https://api.met.no/doc/">met.no</a>. 
+                   Appen er &copy; 2021 BITJUNGLE Rune Mathisen, og har en
+                   <a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache-2.0 lisens.</a>
+                </p>
+              </div>
+            </div>
+          </div>    
+    </main>
+</body>
+</html>
