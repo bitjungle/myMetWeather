@@ -24,7 +24,9 @@ function createPlaces(places) {
     places.forEach((place, index) => {
         placeButton = document.createElement('button');
         placeButton.classList.add('w3-button', 'w3-amber');
-        placeButton.onclick = function () { weatherForecast(index) };
+        placeButton.onclick = function () { 
+            weatherForecast(index, createAstroWeatherTable);
+        };
         placeButton.appendChild(document.createTextNode(place.name));
         placeButtons.appendChild(placeButton);
     });

@@ -17,7 +17,7 @@ const maxTemp = 25.0; // +/- limit in °C
  * @param {Array} place 
  * @param {Array} forecast 
  */
-function createTable(place, forecast) {
+function createAstroWeatherTable(place, forecast) {
     const oldweatherForecast = document.getElementById('weatherForecast');
     const weatherForecast = document.createElement('div');
     weatherForecast.setAttribute('id', 'weatherForecast');
@@ -29,12 +29,6 @@ function createTable(place, forecast) {
     const title = document.createTextNode(`${place.name} - oppdatert ${updatedAtString} `);
     forecastTitle.appendChild(title);
 
-    const meteoblueUrl = document.createElement('a');
-    meteoblueUrl.setAttribute('href', place.meteoblueUrl);
-    meteoblueUrl.setAttribute('id', 'meteoblueUrl');
-    meteoblueUrl.appendChild(document.createTextNode('(sammenlikn med meteoblue)'));
-    forecastTitle.appendChild(meteoblueUrl);
-    
     weatherForecast.appendChild(forecastTitle);
 
     // Table start

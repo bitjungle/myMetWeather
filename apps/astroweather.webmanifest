@@ -1,6 +1,6 @@
 {
-    "name": "Astroverktøy",
-    "short_name": "Verktøy for hobbyastronomer i Grenland",
+    "name": "Astrovær",
+    "short_name": "Astro-værmelding for hobbyastronomer i Grenland",
     "icons": [{
         "src": "img/android-chrome-192x192.png",
         "sizes": "192x192",
